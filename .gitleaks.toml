@@ -1,0 +1,37 @@
+# Gitleaks configuration for LLM Wiki
+# Detects credentials, PII, and sensitive information before wiki ingestion
+
+title: "LLM Wiki Gitleaks Config"
+
+# Allowlist — known safe patterns
+#allowlist:
+#  paths:
+#    - "README.md"
+
+# Custom rules for Chinese-sensitive patterns
+[rules]
+
+# Chinese ID card number (18 digits, last may be X)
+[allowlist]
+  description = "Allowlist for known safe patterns"
+
+[[rules]]
+  id = "chinese-id-card"
+  description = "Chinese Resident ID Card Number"
+  regex = '''\b\d{17}[\dXx]\b'''
+  tags = ["pii", "china"]
+
+[[rules]]
+  id = "chinese-phone-number"
+  description = "Chinese Mobile Phone Number"
+  regex = '''\b1[3-9]\d{9}\b'''
+  tags = ["pii", "china"]
+
+[[rules]]
+  id = "internal-ip-address"
+  description = "Internal / Private IP Address (10.x, 172.16-31.x, 192.168.x)"
+  regex = '''\b(10\.\d{1,3}|172\.(1[6-9]|2\d|3[01])|192\.168)\.\d{1,3}\.\d{1,3}\b'''
+  tags = ["infrastructure", "internal"]
+
+# Built-in rules we want to enable
+# Gitleaks default rules cover: AWS keys, GitHub tokens, private keys, etc.

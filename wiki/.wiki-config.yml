@@ -1,0 +1,36 @@
+# LLM Wiki 配置文件
+# 可配置阈值和策略
+
+# ── 去重策略 ──
+dedup:
+  slug_match: true          # Level 1: 精确 slug 匹配
+  fuzzy_threshold: 0.85     # Level 2: RapidFuzz token_sort_ratio 阈值
+  semantic_threshold: 0.75  # Level 3: SBERT cosine similarity 阈值
+  semantic_model: "all-MiniLM-L6-v2"  # SBERT embedding 模型
+  auto_confidence: 0.85     # 自动操作最低置信度
+
+# ── 敏感信息过滤 ──
+security:
+  gitleaks_config: ".gitleaks.toml"  # gitleaks 配置文件路径
+  chinese_rules:
+    id_card: "\\b\\d{17}[\\dXx]\\b"
+    phone: "\\b1[3-9]\\d{9}\\b"
+    internal_ip: "\\b(10\\.\\d{1,3}|172\\.(1[6-9]|2\\d|3[01])|192\\.168)\\.\\d{1,3}\\.\\d{1,3}\\b"
+  sensitivity_levels:
+    - public     # 安全，可入库
+    - internal   # 内部使用，不含凭据
+    - sensitive  # 硬拦截，不生成
+
+# ── Freshness 策略 ──
+freshness:
+  source_days: 30
+  synthesis_days: 60
+  entity_days: 90
+  concept_days: 180
+  lint_priority_threshold: 50  # 优先级评分 > 50 触发 LLM 语义复查
+
+# ── 同步策略 ──
+sync:
+  checkpoint_field: "last_commit"  # wiki/index.md frontmatter 中的 checkpoint 字段
+  branch_prefix: "sync/auto-"     # 自动同步分支前缀
+  rename_detection: "-M50%"       # git diff 重命名检测阈值

@@ -1,0 +1,31 @@
+#!/bin/bash
+# Pre-commit hook: scan staged changes for secrets and sensitive data
+# Uses gitleaks to detect credentials, PII, and internal IPs before commit
+
+set -e
+
+echo "🔍 Running gitleaks secret scan..."
+
+if ! command -v gitleaks &> /dev/null; then
+    echo "⚠️  gitleaks not installed. Skipping secret scan."
+    echo "   Install: brew install gitleaks"
+    exit 0
+fi
+
+# Run gitleaks on staged changes
+gitleaks detect \
+    --source . \
+    --config .gitleaks.toml \
+    --verbose \
+    --no-git \
+    --log-level warn
+
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ Secret scan failed! Commit blocked."
+    echo "   Review the findings above and remove sensitive data before committing."
+    exit 1
+fi
+
+echo "✅ Secret scan passed."
+exit 0
