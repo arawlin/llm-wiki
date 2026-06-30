@@ -4,6 +4,7 @@ id: wiki-index
 title: "LLM Wiki — 索引"
 created: 2026-06-29
 updated: 2026-06-29
+last_commit: null
 schema_version: "0.1"
 last_commit: null
 freshness_policy:
@@ -36,13 +37,20 @@ deprecated_fields: []
 
 ### Sources（来源）
 
+- [[sources/redpanda-console-technical-summary]] — Redpanda Console 技术知识总结（2026-06-29）
+
 <!-- LLM: 按 tags 分组列出所有 sources 页面 -->
 
 ### Entities（实体）
 
+- [[entities/redpanda-console]] — Redpanda Console | tags: redpanda, kafka, web-ui, dev-tools, observability
+
 <!-- LLM: 按 tags 分组列出所有 entities 页面 -->
 
 ### Concepts（概念）
+
+- [[concepts/console-deserialization-matrix]] — 消息反序列化能力矩阵 | tags: redpanda-console, serialization, kafka
+- [[concepts/console-docker-compose-config-injection]] — Docker Compose 配置注入模式 | tags: redpanda-console, docker-compose, configuration
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
