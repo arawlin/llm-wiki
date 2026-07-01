@@ -6,7 +6,6 @@ created: 2026-06-29
 updated: 2026-07-01
 last_commit: null
 schema_version: "0.1"
-last_commit: null
 freshness_policy:
   source: 30
   synthesis: 60
@@ -66,6 +65,7 @@ deprecated_fields: []
 - [[concepts/binance-web3-multi-chain-provider]] — 多链钱包 Provider 模式 | tags: binance, web3, wallet, multi-chain, provider-pattern
 - [[concepts/agentic-wallet-skills]] — Agentic 钱包技能 | tags: ai, agent, wallet, skills, mcp, cryptocurrency
 - [[concepts/binance-request-signing-payload]] — 请求签名 Payload 构建 | tags: binance, api, security, signing, cryptography
+- [[concepts/conventional-commits]] — Conventional Commits（约定式提交） | tags: git, commit, convention, semantic-versioning, changelog
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
