@@ -3,7 +3,7 @@ type: index
 id: wiki-index
 title: "LLM Wiki — 索引"
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-01
 last_commit: null
 schema_version: "0.1"
 last_commit: null
@@ -38,12 +38,20 @@ deprecated_fields: []
 ### Sources（来源）
 
 - [[sources/redpanda-console-technical-summary]] — Redpanda Console 技术知识总结（2026-06-29）
+- [[sources/binance-api-docs]] — Binance 开发者文档（2026-07-01） | tags: binance, api, cryptocurrency, trading, web3
 
 <!-- LLM: 按 tags 分组列出所有 sources 页面 -->
 
 ### Entities（实体）
 
 - [[entities/redpanda-console]] — Redpanda Console | tags: redpanda, kafka, web-ui, dev-tools, observability
+- [[entities/binance]] — Binance 交易平台 | tags: binance, cryptocurrency, exchange, trading, api
+- [[entities/binance-web3-wallet]] — Binance Web3 钱包 | tags: binance, web3, wallet, multi-chain, mpc
+- [[entities/binance-skills-hub]] — AI Agent 技能市场 | tags: binance, ai, agent, skills, mcp
+- [[entities/binance-cli]] — 命令行工具 | tags: binance, cli, tool, trading
+- [[entities/binance-fix-api]] — FIX 协议接入 | tags: binance, fix, trading, institutional, low-latency
+- [[entities/binance-sbe]] — Simple Binary Encoding | tags: binance, sbe, binary-encoding, low-latency, serialization
+- [[entities/binance-agent-native]] — Agent 原生设计 | tags: binance, ai, agent, llm, mcp
 
 <!-- LLM: 按 tags 分组列出所有 entities 页面 -->
 
@@ -51,6 +59,13 @@ deprecated_fields: []
 
 - [[concepts/console-deserialization-matrix]] — 消息反序列化能力矩阵 | tags: redpanda-console, serialization, kafka
 - [[concepts/console-docker-compose-config-injection]] — Docker Compose 配置注入模式 | tags: redpanda-console, docker-compose, configuration
+- [[concepts/binance-api-authentication]] — API 鉴权与签名 | tags: binance, api, authentication, security, cryptography
+- [[concepts/binance-rate-limiting]] — 速率限制与可靠性 | tags: binance, api, rate-limiting, reliability, throttling
+- [[concepts/binance-api-types-comparison]] — API 类型对比 | tags: binance, api, architecture, rest, websocket, fix, sbe
+- [[concepts/llms-txt-standard]] — llms.txt 标准 | tags: ai, llm, documentation, web-standard, agent
+- [[concepts/binance-web3-multi-chain-provider]] — 多链钱包 Provider 模式 | tags: binance, web3, wallet, multi-chain, provider-pattern
+- [[concepts/agentic-wallet-skills]] — Agentic 钱包技能 | tags: ai, agent, wallet, skills, mcp, cryptocurrency
+- [[concepts/binance-request-signing-payload]] — 请求签名 Payload 构建 | tags: binance, api, security, signing, cryptography
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
