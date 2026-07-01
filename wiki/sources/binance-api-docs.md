@@ -38,7 +38,21 @@ schema_version: "0.1"
 
 Binance 开发者文档是 Binance 交易所面向开发者的核心 API 参考文档，覆盖 REST API、WebSocket API、WebSocket Streams、FIX API 和 SBE（Simple Binary Encoding）五种 API 类型。文档涵盖市场数据访问、账户操作、高级交易、流式传输以及低延迟集成——支持从简单脚本到专业交易系统的全场景开发。
 
-> 来源：`raw/binance-api-doc-llms-full.txt`，从 `https://developers.binance.com/zh-CN/docs/llms-full.txt` 下载的完整 LLM 文档。
+> **来源**：`https://developers.binance.com/zh-CN/docs/llms-full.txt` — Binance 官方提供的 LLM 可消费文档全文。
+
+## 如何查询 API 详情
+
+本 Wiki 存储架构级知识（鉴权体系、限频策略、API 类型对比等概念）。当需要查询**具体端点参数、方法签名、响应字段**等细节时，请直接获取原始文档：
+
+```bash
+# 获取全文（约 160K 行）
+curl -s https://developers.binance.com/zh-CN/docs/llms-full.txt
+
+# 在文档中搜索具体内容
+curl -s https://developers.binance.com/zh-CN/docs/llms-full.txt | grep -A 30 "GET /api/v3/klines"
+```
+
+> **Agent 指令**：当用户询问具体 API 端点/方法/参数的用法时，请使用 `fetch_webpage` 工具获取 `https://developers.binance.com/zh-CN/docs/llms-full.txt` 并从中搜索相关信息。本 Wiki 的概念页面仅提供架构和模式层面的知识。
 
 ## 关键要点
 
