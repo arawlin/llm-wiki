@@ -3,7 +3,7 @@ type: index
 id: wiki-index
 title: "LLM Wiki — 索引"
 created: 2026-06-29
-updated: 2026-07-01
+updated: 2026-07-23
 last_commit: null
 schema_version: "0.1"
 freshness_policy:
@@ -66,6 +66,7 @@ deprecated_fields: []
 - [[concepts/agentic-wallet-skills]] — Agentic 钱包技能 | tags: ai, agent, wallet, skills, mcp, cryptocurrency
 - [[concepts/binance-request-signing-payload]] — 请求签名 Payload 构建 | tags: binance, api, security, signing, cryptography
 - [[concepts/conventional-commits]] — Conventional Commits（约定式提交） | tags: git, commit, convention, semantic-versioning, changelog
+- [[concepts/planning-doc-hierarchy]] — 项目规划文档体系：职责边界 | tags: requirements-engineering, documentation, prd, architecture, spike, implementation-plan, ddd
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
