@@ -3,7 +3,7 @@ type: index
 id: wiki-index
 title: "LLM Wiki — 索引"
 created: 2026-06-29
-updated: 2026-07-31
+updated: 2026-08-01
 last_commit: null
 schema_version: "0.1"
 freshness_policy:
@@ -69,6 +69,7 @@ deprecated_fields: []
 - [[concepts/planning-doc-hierarchy]] — 项目规划文档体系：职责边界 | tags: requirements-engineering, documentation, prd, architecture, spike, implementation-plan, ddd
 - [[concepts/better-auth-google-oauth-callback-flow]] — better-auth Google OAuth 完整回调流程 | tags: better-auth, google-oauth, oauth, callback, authentication, nestjs
 - [[concepts/oauth-callback-url-backend-principle]] — OAuth 回调 URL 的后端配置原则 | tags: oauth, authentication, better-auth, google-oauth, security
+- [[concepts/go-package-organization]] — Go 包结构组织：按行为而非分层 | tags: go, package, architecture, project-structure, best-practice, yagni, design
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
