@@ -6,8 +6,7 @@
 
 ## 最近更新（完整历史，倒序）
 
-<!-- LLM: append after each operation; keep user memory copy trimmed to latest 5 -->
-- [2026-08-01] Wiki ingest: 1 concept（Go 包结构组织）← `questions_approved/`，写入 `wiki/concepts/`
+<!-- LLM: append after each operation; keep user memory copy trimmed to latest 5 -->- [2026-08-13] Wiki capture (买卖策略模型): 2 concepts（trade-signal-model + weight-vs-position）→ 直接写入 `wiki/concepts/`（用户拍板绕过 pending/review）；来源 GmgnTwitterTGAlert 会话 + context7 调研- [2026-08-01] Wiki ingest: 1 concept（Go 包结构组织）← `questions_approved/`，写入 `wiki/concepts/`
 - [2026-08-01] Wiki review: 1 approved（Go 包结构组织, high confidence）→ `questions_approved/`，pending 清零
 - [2026-08-01] Wiki capture (Go 包结构业界共识): 1 concept → `questions_pending/`（1 pending review）
 - [2026-07-31] Wiki ingest: 2 concepts（OAuth 回调流程）← `questions_approved/`，写入 `wiki/concepts/`

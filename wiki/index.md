@@ -70,6 +70,8 @@ deprecated_fields: []
 - [[concepts/better-auth-google-oauth-callback-flow]] — better-auth Google OAuth 完整回调流程 | tags: better-auth, google-oauth, oauth, callback, authentication, nestjs
 - [[concepts/oauth-callback-url-backend-principle]] — OAuth 回调 URL 的后端配置原则 | tags: oauth, authentication, better-auth, google-oauth, security
 - [[concepts/go-package-organization]] — Go 包结构组织：按行为而非分层 | tags: go, package, architecture, project-structure, best-practice, yagni, design
+- [[concepts/trade-signal-model]] — 买卖策略模型：信号共振 + 加权净资金流评分 + 仓位分层 | tags: trading, crypto, meme-coin, signal, smart-money, kol-tracking, position-sizing, risk-management, gmgn
+- [[concepts/weight-vs-position]] — 权重只排序、不直接定仓位（信号-决策-执行分层） | tags: trading, risk-management, position-sizing, architecture, decision
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
