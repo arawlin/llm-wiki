@@ -3,15 +3,13 @@
 
 # ── 去重策略 ──
 dedup:
-  slug_match: true          # Level 1: 精确 slug 匹配
-  fuzzy_threshold: 0.85     # Level 2: RapidFuzz token_sort_ratio 阈值
-  semantic_threshold: 0.75  # Level 3: SBERT cosine similarity 阈值
-  semantic_model: "all-MiniLM-L6-v2"  # SBERT embedding 模型
-  auto_confidence: 0.85     # 自动操作最低置信度
+  slug_match: true          # Level 1: 精确 slug 匹配（自动更新/合并）
+  # Level 2 语义判断由 LLM 完成（不再依赖 RapidFuzz / SBERT —— all-MiniLM-L6-v2 为英文模型，中文不可靠）
+  # 原则：宁多勿少 —— 不确定就创建新页面
 
 # ── 敏感信息过滤 ──
 security:
-  gitleaks_config: ".gitleaks.toml"  # gitleaks 配置文件路径
+  gitleaks_config: ".gitleaks.toml"  # gitleaks 配置文件路径（optional，未安装则跳过）
   chinese_rules:
     id_card: "\\b\\d{17}[\\dXx]\\b"
     phone: "\\b1[3-9]\\d{9}\\b"
