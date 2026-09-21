@@ -16,7 +16,7 @@ tags:
   - gmgn
 sources: []
 related:
-  - concept-weight-vs-position
+  - weight-vs-position
 status: active
 schema_version: "0.1"
 last_reviewed: 2026-08-13
@@ -124,7 +124,7 @@ flowchart TD
 
 ## 相关概念
 
-- [[concept-weight-vs-position]] — 权重只排序、不直接定仓位（本模型的架构决策）
+- [[concepts/weight-vs-position]] — 权重只排序、不直接定仓位（本模型的架构决策）
 
 ## 出现在
 

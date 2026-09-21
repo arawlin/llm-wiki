@@ -12,7 +12,7 @@ tags:
   - decision
 sources: []
 related:
-  - concept-trade-signal-model
+  - trade-signal-model
 status: active
 schema_version: "0.1"
 last_reviewed: 2026-08-13
@@ -67,7 +67,7 @@ flowchart LR
 
 ## 相关概念
 
-- [[concept-trade-signal-model]] — 买卖策略模型（评分公式、信号共振、落地架构）
+- [[concepts/trade-signal-model]] — 买卖策略模型（评分公式、信号共振、落地架构）
 
 ## 出现在
 
