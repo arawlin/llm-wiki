@@ -3,7 +3,7 @@ type: index
 id: wiki-index
 title: "LLM Wiki — 索引"
 created: 2026-06-29
-updated: 2026-08-01
+updated: 2026-09-21
 last_commit: null
 schema_version: "0.1"
 freshness_policy:
@@ -51,6 +51,9 @@ deprecated_fields: []
 - [[entities/binance-fix-api]] — FIX 协议接入 | tags: binance, fix, trading, institutional, low-latency
 - [[entities/binance-sbe]] — Simple Binary Encoding | tags: binance, sbe, binary-encoding, low-latency, serialization
 - [[entities/binance-agent-native]] — Agent 原生设计 | tags: binance, ai, agent, llm, mcp
+- [[entities/openssh]] — OpenSSH：SSH 协议实现套件（sshd/ssh/ssh-keygen） | tags: ssh, openssh, sshd, tool, cryptography
+- [[entities/cloud-init]] — 云实例初始化服务（写入 sshd drop-in 配置） | tags: cloud-init, cloud, provisioning, ssh
+- [[entities/debian-13]] — Debian 13（trixie）SSH 打包默认值与服务形态 | tags: debian, linux, distro, ssh, packaging
 
 <!-- LLM: 按 tags 分组列出所有 entities 页面 -->
 
@@ -72,6 +75,8 @@ deprecated_fields: []
 - [[concepts/go-package-organization]] — Go 包结构组织：按行为而非分层 | tags: go, package, architecture, project-structure, best-practice, yagni, design
 - [[concepts/trade-signal-model]] — 买卖策略模型：信号共振 + 加权净资金流评分 + 仓位分层 | tags: trading, crypto, meme-coin, signal, smart-money, kol-tracking, position-sizing, risk-management, gmgn
 - [[concepts/weight-vs-position]] — 权重只排序、不直接定仓位（信号-决策-执行分层） | tags: trading, risk-management, position-sizing, architecture, decision
+- [[concepts/sshd-config-precedence]] — sshd 配置生效顺序：drop-in 优先（first-wins） | tags: ssh, sshd, configuration, debian, cloud-init
+- [[concepts/ssh-pubkey-only-hardening]] — SSH 纯公钥登录切换与硬化（六步流程 + 防锁死） | tags: ssh, security, hardening, authentication, ed25519, debian
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 
