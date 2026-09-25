@@ -3,7 +3,7 @@ type: index
 id: wiki-index
 title: "LLM Wiki — 索引"
 created: 2026-06-29
-updated: 2026-09-21
+updated: 2026-09-25
 last_commit: null
 schema_version: "0.1"
 freshness_policy:
@@ -54,6 +54,9 @@ deprecated_fields: []
 - [[entities/openssh]] — OpenSSH：SSH 协议实现套件（sshd/ssh/ssh-keygen） | tags: ssh, openssh, sshd, tool, cryptography
 - [[entities/cloud-init]] — 云实例初始化服务（写入 sshd drop-in 配置） | tags: cloud-init, cloud, provisioning, ssh
 - [[entities/debian-13]] — Debian 13（trixie）SSH 打包默认值与服务形态 | tags: debian, linux, distro, ssh, packaging
+- [[entities/docker]] — Docker：容器平台（客户端/守护进程架构） | tags: docker, container, platform, devops
+- [[entities/docker-compose]] — Docker Compose：多容器编排工具（构建期代理注入路径） | tags: docker, docker-compose, orchestration, tool
+- [[entities/buildkit]] — BuildKit：Docker 构建子系统（预定义代理参数与缓存） | tags: docker, buildkit, build, tool
 
 <!-- LLM: 按 tags 分组列出所有 entities 页面 -->
 
@@ -77,6 +80,7 @@ deprecated_fields: []
 - [[concepts/weight-vs-position]] — 权重只排序、不直接定仓位（信号-决策-执行分层） | tags: trading, risk-management, position-sizing, architecture, decision
 - [[concepts/sshd-config-precedence]] — sshd 配置生效顺序：drop-in 优先（first-wins） | tags: ssh, sshd, configuration, debian, cloud-init
 - [[concepts/ssh-pubkey-only-hardening]] — SSH 纯公钥登录切换与硬化（六步流程 + 防锁死） | tags: ssh, security, hardening, authentication, ed25519, debian
+- [[concepts/docker-build-proxy-configuration]] — Docker 构建期代理：三层模型与配置机制 | tags: docker, proxy, buildkit, docker-compose, configuration
 
 <!-- LLM: 按 tags 分组列出所有 concepts 页面 -->
 

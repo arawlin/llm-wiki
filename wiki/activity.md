@@ -7,6 +7,9 @@
 ## 最近更新（完整历史，倒序）
 
 <!-- LLM: newest first; append after each operation -->
+- [2026-09-25] Wiki ingest: 1 concept + 3 entity（Docker 构建期代理三层模型 —— 构建期代理配置机制、Docker、Docker Compose、BuildKit）← `questions_approved/`，写入 `wiki/`
+- [2026-09-25] Wiki review: 1 approved（Docker 构建期代理三层模型, high confidence）→ `questions_approved/`，pending 清零；机制经 docker/compose + docker/buildx 源码与 Docker 官方文档交叉验证
+- [2026-09-25] Wiki capture (Docker 构建期代理三层模型): 1 session 主题 → `questions_pending/`（1 pending review）；来源 VS Code Copilot Chat 会话（内网服务器 docker compose build 排障），机制经 docker/compose + docker/buildx 源码与 Docker 官方文档交叉验证
 - [2026-09-21] Wiki ingest: 2 concept + 3 entity（Debian 13 SSH 公钥登录与硬化 —— sshd 配置优先级、纯公钥硬化流程、OpenSSH、cloud-init、Debian 13）← `questions_approved/`，写入 `wiki/`；附带修复 trade-signal-model / weight-vs-position 文件名与 id 不一致（4 条断链）
 - [2026-09-21] Wiki review: 1 approved（Debian 13 SSH 公钥登录与硬化, high confidence）→ `questions_approved/`，pending 清零
 - [2026-09-21] Wiki capture (Debian 13 SSH 公钥登录): 1 session 主题 → `questions_pending/`（1 pending review）；来源 VS Code Copilot Chat 会话，Debian 打包事实经官方包源码（sources.debian.org + .deb 解包）验证
